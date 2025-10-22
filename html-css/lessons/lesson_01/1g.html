@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1g</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #201e1c;
+      font-family: "poppins", system-ui;
+    }
+
+    .card {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #a6d2c5;
+      width: 375px;
+      height: 550px;
+      border-radius: 10px;
+    }
+
+    .back {
+      font-size: 12px;
+      font-weight: 400;
+      display: block;
+      background-color: black;
+      width: 19ch;
+      text-align: center;
+      align-content: center;
+      border-bottom: 20px solid black;
+      border-radius: 10px;
+      margin: 16px 0 -33px 16px;
+      color: #fff;
+      text-decoration: none;
+      transition: 300ms;
+    }
+
+    .back:hover,
+    .back:focus {
+      background-color: #ffee52;
+      color: black;
+      border-color: #ffee52;
+    }
+
+    .card-image {
+      background-color: #fff;
+      height: 220px;
+      margin: 16px;
+      border-radius: 10px;
+    }
+
+    .product-type {
+      font-size: 12px;
+      width: 16ch;
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #fff;
+      border-bottom: 20px solid #fff;
+      opacity: 60%;
+    }
+
+    .product-type strong {
+      font-weight: 600;
+    }
+
+    img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: auto;
+      margin: auto 0;
+    }
+
+    .card-content {
+      margin: 16px;
+    }
+
+    .product-name {
+      font-size: 24px;
+      margin-top: -8px;
+      font-weight: 700;
+      padding-bottom: 4px;
+    }
+
+    .author {
+      font-style: italic;
+      font-size: 16px;
+      margin-top: -8px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      background-color: #0009;
+      border-radius: 10px;
+      width: 11ch;
+      align-content: center;
+      margin: 16px 0px;
+      text-align: center;
+    }
+
+    .price strong {
+      font-size: 52px;
+      font-weight: 700;
+    }
+
+    .product-rest {
+      font-size: 12px;
+      position: relative;
+      bottom: -10px;
+    }
+
+    .button {
+      font-family: "poppins";
+      font-weight: 700;
+      font-size: 20px;
+      align-content: center;
+      border: none;
+      border-radius: 10px;
+      position: fixed;
+      height: 45px;
+      transition: 300ms;
+      cursor: pointer;
+    }
+
+    .add-button {
+      bottom: 16px;
+      right: 16px;
+      width: 85px;
+      background-color: #ffee52;
+      font-size: 30px;
+    }
+
+    .add-button:hover,
+    .add-button:focus {
+      height: 55px;
+    }
+
+    .add-button:active {
+      opacity: 50%;
+    }
+
+    .buy-button {
+      bottom: 16px;
+      left: 16px;
+      width: 250px;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .buy-button:hover,
+    .buy-button:focus {
+      height: 55px;
+    }
+
+    .buy-button:active {
+      opacity: 50%;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <a
+        class="back"
+        href="https://www.amazon.com.br/homem-que-calculava-Edi%C3%A7%C3%A3o-comemorativa/dp/6555873396/ref=tmm_hrd_swatch_0"
+        >&leftarrow; &nbsp;back to amazon
+      </a>
+      <p class="product-type"><strong>book</strong> - hard cover</p>
+      <div class="card-image">
+        <img
+          src="https://m.media-amazon.com/images/I/71TQVuPCIML._SL1500_.jpg"
+          alt="livro capa verde com detalhes artirticos tipicos da cultura arábe em preto e tons de areia"
+        />
+      </div>
+      <div class="card-content">
+        <h1 class="product-name">O Homem que Calculava</h1>
+        <p class="author">Malba Than</p>
+        <p class="price"><strong>&dollar;75</strong>.90</p>
+        <p class="product-rest">in stock</p>
+        <p class="product-rest">Free delivery tomorrow</p>
+        <button class="buy-button button">Buy now</button>
+        <button class="add-button button">&plus;</button>
+      </div>
+    </div>
+  </body>
+</html>
