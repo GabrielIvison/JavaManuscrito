@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2e</title>
+    <style>
+      html {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        background: #f0f0f0;
+      }
+
+      .button {
+        --heigth: 36px;
+        height: var(--heigth);
+        cursor: pointer;
+        border: none;
+      }
+
+      .linkedin-button {
+        margin-left: 6px;
+        border-radius: calc(var(--heigth) / 2);
+        font-size: 14px;
+        font-weight: 600;
+        transition: background-color 150ms, color 150ms, border 150ms;
+      }
+
+      .apply-button {
+        background-color: #0a66c2;
+        color: #fff;
+        width: 220px;
+      }
+
+      .apply-button:hover {
+        background-color: hsl(210, 50%, 30%);
+      }
+
+      .save-button {
+        color: #0a66c2;
+        width: 70px;
+        border: 1px solid #0a66c2;
+      }
+
+      .save-button:hover {
+        background-color: hsl(210, 50%, 90%);
+        color: hsl(210, 50%, 30%);
+        border: 2px solid hsl(210, 50%, 30%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- actual content -->
+    <button class="apply-button linkedin-button button">
+      Apply on company website
+    </button>
+    <button class="save-button linkedin-button button">Save</button>
+
+    <!-- outside content -->
+    <footer style="position: absolute; bottom: 30px; left: 30px">
+      <button style="width: 36px; height: 36px">
+        <a
+          style="text-decoration: none; color: #000; font-size: 20px"
+          href="/index.html"
+          >&LeftArrow;</a
+        >
+      </button>
+    </footer>
+  </body>
+</html>

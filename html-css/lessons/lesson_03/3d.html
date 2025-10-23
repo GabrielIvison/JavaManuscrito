@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d</title>
+    <style>
+      html {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        background: #f0f0f0;
+      }
+
+      .button {
+        --heigth: 36px;
+        height: var(--heigth);
+        cursor: pointer;
+        border: none;
+      }
+
+      .bootstrap-button {
+        margin-left: 6px;
+        width: 110px;
+        border-radius: calc(var(--heigth) / 12);
+        font-size: 14px;
+        font-weight: 600;
+        transition: background-color 150ms, color 150ms;
+      }
+
+      .get-started-button {
+        background-color: hsl(264, 39%, 51%);
+        color: #fff;
+      }
+
+      .get-started-button:hover {
+        background-color: hsl(278, 29%, 41%);
+      }
+
+      .download-button {
+        border: 1px solid #585858;
+        color: #585858;
+      }
+
+      .download-button:hover {
+        background-color: #585858;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- actual content -->
+    <button class="get-started-button bootstrap-button button">
+      Get started
+    </button>
+    <button class="download-button bootstrap-button button">Download</button>
+
+    <!-- outside content -->
+    <footer style="position: absolute; bottom: 30px; left: 30px">
+      <button style="width: 36px; height: 36px">
+        <a
+          style="text-decoration: none; color: #000; font-size: 20px"
+          href="/index.html"
+          >&LeftArrow;</a
+        >
+      </button>
+    </footer>
+  </body>
+</html>

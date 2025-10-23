@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3a</title>
+    <style>
+      html {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        background: #f0f0f0;
+      }
+
+      .button {
+        --heigth: 36px;
+        height: var(--heigth);
+        cursor: pointer;
+        border: none;
+      }
+
+      .uber-button {
+        background-color: #000;
+        color: #fff;
+        width: 120px;
+        transition: opacity 150ms;
+      }
+
+      .uber-button:hover {
+        opacity: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- actual content -->
+    <button class="uber-button button">Request now</button>
+
+    <!-- outside content -->
+    <footer style="position: absolute; bottom: 30px; left: 30px">
+      <button style="width: 36px; height: 36px">
+        <a
+          style="text-decoration: none; color: #000; font-size: 20px"
+          href="/index.html"
+          >&LeftArrow;</a
+        >
+      </button>
+    </footer>
+  </body>
+</html>
