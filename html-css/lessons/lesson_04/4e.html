@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2e</title>
+    <title>4e</title>
     <link rel="stylesheet" href="/main/css/footer.css" />
     <style>
       html {
@@ -15,7 +15,7 @@
 
       .button {
         --heigth: 36px;
-        height: var(--heigth);
+        /* height: var(--heigth); */
         cursor: pointer;
         border: none;
       }
@@ -25,18 +25,31 @@
         border-radius: calc(var(--heigth) / 2);
         font-size: 14px;
         font-weight: 600;
+        transition: background-color 150ms, color 150ms, border 150ms;
       }
 
       .apply-button {
         background-color: #0a66c2;
         color: #fff;
-        width: 220px;
+        padding: 9px 20px;
+        /* width: 220px; */
+      }
+
+      .apply-button:hover {
+        background-color: hsl(210, 50%, 30%);
       }
 
       .save-button {
+        padding: 8px 18px;
         color: #0a66c2;
-        width: 70px;
+        /* width: 70px; */
         border: 1px solid #0a66c2;
+      }
+
+      .save-button:hover {
+        background-color: hsl(210, 50%, 90%);
+        color: hsl(210, 50%, 30%);
+        border: 2px solid hsl(210, 50%, 30%);
       }
     </style>
   </head>

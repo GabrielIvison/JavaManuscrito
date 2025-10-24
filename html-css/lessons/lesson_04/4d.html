@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2e</title>
+    <title>4d</title>
     <link rel="stylesheet" href="/main/css/footer.css" />
     <style>
       html {
@@ -15,37 +15,48 @@
 
       .button {
         --heigth: 36px;
-        height: var(--heigth);
+        /* height: var(--heigth); */
         cursor: pointer;
         border: none;
       }
 
-      .linkedin-button {
+      .bootstrap-button {
         margin-left: 6px;
-        border-radius: calc(var(--heigth) / 2);
+        /* width: 110px; */
+        border-radius: calc(var(--heigth) / 12);
         font-size: 14px;
         font-weight: 600;
+        padding: 9px 19px;
+        transition: background-color 150ms, color 150ms;
       }
 
-      .apply-button {
-        background-color: #0a66c2;
+      .get-started-button {
+        background-color: hsl(264, 39%, 51%);
         color: #fff;
-        width: 220px;
       }
 
-      .save-button {
-        color: #0a66c2;
-        width: 70px;
-        border: 1px solid #0a66c2;
+      .get-started-button:hover {
+        background-color: hsl(278, 29%, 41%);
+      }
+
+      .download-button {
+        border: 1px solid #585858;
+        color: #585858;
+        padding: 8px 19px;
+      }
+
+      .download-button:hover {
+        background-color: #585858;
+        color: #fff;
       }
     </style>
   </head>
   <body>
     <!-- actual content -->
-    <button class="apply-button linkedin-button button">
-      Apply on company website
+    <button class="get-started-button bootstrap-button button">
+      Get started
     </button>
-    <button class="save-button linkedin-button button">Save</button>
+    <button class="download-button bootstrap-button button">Download</button>
 
     <!-- outside content -->
     <footer class="pages-back-footer footer">
@@ -64,6 +75,8 @@
           />
         </svg>
       </a>
+    </footer>
+      </button>
     </footer>
   </body>
 </html>

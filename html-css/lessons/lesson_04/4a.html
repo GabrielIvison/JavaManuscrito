@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2e</title>
+    <title>4a</title>
     <link rel="stylesheet" href="/main/css/footer.css" />
     <style>
       html {
@@ -14,38 +14,30 @@
       }
 
       .button {
-        --heigth: 36px;
-        height: var(--heigth);
+        /* --heigth: 36px;
+        height: var(--heigth); */
         cursor: pointer;
         border: none;
-      }
-
-      .linkedin-button {
-        margin-left: 6px;
-        border-radius: calc(var(--heigth) / 2);
         font-size: 14px;
-        font-weight: 600;
       }
 
-      .apply-button {
-        background-color: #0a66c2;
-        color: #fff;
-        width: 220px;
+      .uber-button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        /* width: 120px; */
+        transition: opacity 150ms;
+        /* by using padding and margin we can resize the buttons with text easily */
       }
 
-      .save-button {
-        color: #0a66c2;
-        width: 70px;
-        border: 1px solid #0a66c2;
+      .uber-button:hover {
+        opacity: 80%;
       }
     </style>
   </head>
   <body>
     <!-- actual content -->
-    <button class="apply-button linkedin-button button">
-      Apply on company website
-    </button>
-    <button class="save-button linkedin-button button">Save</button>
+    <button class="uber-button button">Request now</button>
 
     <!-- outside content -->
     <footer class="pages-back-footer footer">
