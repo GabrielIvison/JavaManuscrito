@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2d</title>
+    <title>4h</title>
     <link rel="stylesheet" href="/html-css/main/css/footer.css" />
     <style>
       html {
@@ -13,38 +13,39 @@
         background: #f0f0f0;
       }
 
-      .button {
-        --heigth: 36px;
-        height: var(--heigth);
-        cursor: pointer;
+      :root {
+        --color-prima: hsl(90, 67%, 76%);
+        --color-second: hsl(280, 97%, 30%);
+        --font-size: 16px;
+      }
+
+      .pag-button {
+        background-color: var(--color-prima);
+        color: var(--color-second);
         border: none;
-      }
-
-      .bootstrap-button {
-        margin-left: 6px;
-        width: 110px;
-        border-radius: calc(var(--heigth) / 12);
-        font-size: 14px;
+        border-radius: 45px;
+        font-size: var(--font-size);
         font-weight: 600;
+        padding: 6px 12px;
+        transition: all 200ms;
+        cursor: pointer;
       }
 
-      .get-started-button {
-        background-color: #7952b3;
-        color: #fff;
+      .pag-button:hover,
+      .pag-button:focus {
+        background-color: var(--color-second);
+        color: var(--color-prima);
       }
 
-      .download-button {
-        border: 1px solid #585858;
-        color: #585858;
+      .strech-button:hover {
+        padding: 18px 36px;
+        font-size: calc(var(--font-size) * 3);
       }
     </style>
   </head>
   <body>
     <!-- actual content -->
-    <button class="get-started-button bootstrap-button button">
-      Get started
-    </button>
-    <button class="download-button bootstrap-button button">Download</button>
+    <button class="strech-button pag-button">Strech</button>
 
     <!-- outside content -->
     <footer class="pages-back-footer footer">
